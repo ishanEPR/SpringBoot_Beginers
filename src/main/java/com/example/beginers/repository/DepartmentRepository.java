@@ -9,5 +9,6 @@ import com.example.beginers.entity.Department;
 public interface DepartmentRepository extends JpaRepository<Department,Long> {
 	
 	public Department  findByDepartmentName(String departmentName);
+	public Department  findByDepartmentNameIgnoreCase(String departmentName);
 
 }
